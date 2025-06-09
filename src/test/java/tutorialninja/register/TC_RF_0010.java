@@ -40,7 +40,7 @@ public class TC_RF_0010 {
 		driver.findElement(By.xpath("//input[@value='Continue']")).click();
 		
 		Thread.sleep(3000);
-		
+		//screenshot methods
 		File srcscreenshot1 = driver.findElement(By.xpath("//form[@class='form-horizontal']")).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(srcscreenshot1, new File(System.getProperty("user.dir")+"\\Screenshots\\sc1Actual.png"));
 		
